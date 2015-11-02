@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'DiamondDust';
+  src: url('../_font/DiamondDust.ttf');
+}
+
+.title {
+  font-family: 'DiamondDust';
+  color: brown;
+}
+
+.option {
+  	cursor: hand;
+}
