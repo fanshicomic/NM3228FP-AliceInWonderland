@@ -11,3 +11,9 @@
 .option {
   	cursor: hand;
 }
+
+#alice {
+	position: absolute;
+	right: 18%;
+	top: 15%;
+}
