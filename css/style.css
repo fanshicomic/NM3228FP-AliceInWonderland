@@ -13,12 +13,21 @@
 }
 
 .clickable {
-	
+	cursor: hand;
 }
 
 #alice {
 	position: absolute;
 	right: 18%;
 	top: 15%;
+}
+
+#long-container {
+	background-image: url("../images/4.png");
+	background-position: left;
+	background-size: 200% 100%;
+	width: 70%;
+	margin-left: 15%;
+	height: 88%;
 }
 
