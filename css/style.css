@@ -50,6 +50,38 @@
 	font-size: 20px;
 }
 
+.door {
+	cursor: hand;
+}
+
+#queen {
+	position: absolute;
+	left: 43%;
+	top: 14%;
+	width: 10%;
+}
+
+#cat {
+	position: absolute;
+	left: 30%;
+	top: 48%;
+	width: 10%;
+}
+
+#hatter {
+	position: absolute;
+	left: 43%;
+	top: 48%;
+	width: 10%;
+}
+
+#rabbit {
+	position: absolute;
+	left: 57%;
+	top: 48%;
+	width: 10%;
+}
+
 #alice {
 	position: absolute;
 	right: 18%;
@@ -57,7 +89,7 @@
 }
 
 #long-container {
-	background-image: url("../images/4.png");
+	background-image: url("../images/pre-hub/4.png");
 	background-position: left;
 	background-size: 200% 100%;
 	width: 70%;
@@ -66,7 +98,7 @@
 }
 
 #long-container-17 {
-	background-image: url("../images/17.png");
+	background-image: url("../images/pre-hub/17.png");
 	background-position: left;
 	background-size: 200% 100%;
 	width: 70%;

@@ -1,6 +1,11 @@
 var animate;
 var animated = false;
 var dreamValue = 0;
+var queenVisited = false;
+var catVisited = false;
+var hatterVisited = false;
+var rabbitVisited = false;
+
 function animateCover() {
 	if (animated == false) {
 		animated = true;
@@ -36,6 +41,24 @@ function changeDreamValue(value) {
 
 function goToNextPanel(panel) {
 	window.location.href = "alice_" + panel + ".html";
+}
+
+function showDoors() {
+	if (!catVisited) {
+		$("#cat-image").attr("src", "images/doorEmpty.png");
+	} else {
+		$("#cat-image").attr("src", "images/doorCat.png");
+	}
+	if (!hatterVisited) {
+		$("#hatter-image").attr("src", "images/doorEmpty.png");
+	} else {
+		$("#hatter-image").attr("src", "images/doorMadHatter.png");
+	}
+	if (!rabbitVisited) {
+		$("#rabbit-image").attr("src", "images/doorEmpty.png");
+	} else {
+		$("#rabbit-image").attr("src", "images/doorRabbit.png");
+	}
 }
 
 function visitRight() {
