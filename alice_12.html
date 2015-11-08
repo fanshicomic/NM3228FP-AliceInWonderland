@@ -13,7 +13,20 @@
 <body>
 	<div id="container" style="text-align:center">
 		<h1 class="title">- Alice In Wonderland -</h1>
-		<a href="alice_13.html"><img src="images/12.png" style="width:70%"></a>
+		<img src="images/12.png" style="width:70%">
+		<div id="responses">
+			<p class="response-1">"WHY AM I HERE?"</p>
+			<p class="response-2">"GET STRAIGHT TO THE POINT"</p>
+		</div>
 	</div>
 </body>
+
+<script type="text/javascript">
+	$(".response-1").click(function() {
+		chooseOption(0, 13);
+	});
+	$(".response-2").click(function() {
+		chooseOption(0, 13);
+	});
+</script>
 </html>
