@@ -13,7 +13,19 @@
 <body>
 	<div id="container" style="text-align:center">
 		<h1 class="title">- Alice In Wonderland -</h1>
-		<a href="alice_17.html"><img src="images/16.png" style="width:70%"></a>
+		<img src="images/16.png" style="width:70%">
+		<div id="responses">
+			<p class="response-1">"IT LOOKS LIKE A NICE BUT STRANGE PLACE, MR.CATERPILLAR."</p>
+			<p class="response-2">"THIS PLACE ISN'T REAL."</p>
+		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	$(".response-1").click(function() {
+		chooseOption(0, 17);
+	});
+	$(".response-2").click(function() {
+		chooseOption(0, 17);
+	});
+</script>
 </html>
