@@ -12,8 +12,13 @@
   	cursor: hand;
 }
 
+.clickable {
+	
+}
+
 #alice {
 	position: absolute;
 	right: 18%;
 	top: 15%;
 }
+

@@ -1,12 +1,16 @@
 var animate;
+var animated = false;
 function animateCover() {
-	var round = 22;
-	var total = round;
-	var speed = 10;
-	var time = 50;
-	animate = setInterval(function(){
-		moveAlice(speed, total, round--);
-	}, time);
+	if (animated == false) {
+		animated = true;
+		var round = 22;
+		var total = round;
+		var speed = 10;
+		var time = 50;
+		animate = setInterval(function(){
+			moveAlice(speed, total, round--);
+		}, time);
+	}
 }
 	
 
