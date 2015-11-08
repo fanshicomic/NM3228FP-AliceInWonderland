@@ -16,6 +16,40 @@
 	cursor: hand;
 }
 
+.choose_response {
+	position: absolute;
+	top: 68%;
+	margin-top: 5%;
+	left: 21%;
+	font-size: 23px;
+}
+
+.response-1 {
+	cursor: hand;
+	position: absolute;
+	top: 73%;
+	margin-top: 5%;
+	width: 100%;
+	left: auto;
+	right: auto;
+	font-size: 20px;
+}
+
+.response-1:hover, .response-2:hover {
+	color: blue;
+}
+
+.response-2 {
+	cursor: hand;
+	position: absolute;
+	top: 78%;
+	margin-top: 5%;
+	width: 100%;
+	left: auto;
+	right: auto;
+	font-size: 20px;
+}
+
 #alice {
 	position: absolute;
 	right: 18%;

@@ -1,5 +1,6 @@
 var animate;
 var animated = false;
+var dreamValue = 0;
 function animateCover() {
 	if (animated == false) {
 		animated = true;
@@ -22,6 +23,19 @@ function moveAlice(speed, total, round) {
 		clearInterval(animate);
 		window.location.href = "alice_2.html";
 	}
+}
+
+function chooseOption(value, panel) {
+	changeDreamValue(value);
+	goToNextPanel(panel);
+}
+
+function changeDreamValue(value) {
+	dreamValue +=value;
+}
+
+function goToNextPanel(panel) {
+	window.location.href = "alice_" + panel + ".html";
 }
 
 function visitRight() {
