@@ -151,6 +151,7 @@
     width:34%;
     height:84%;
     top: 10%;
+    cursor: hand;
 }
 
 #right {
@@ -159,6 +160,7 @@
 	height:84%;
 	width:34%;
 	top: 10%;
+	cursor: hand;
 }
 
 #alice {

@@ -1,6 +1,5 @@
 var animate;
 var animated = false;
-var dreamValue = 0;
 
 function animateCover() {
 	if (animated == false) {
@@ -13,6 +12,11 @@ function animateCover() {
 			moveAlice(speed, total, round--);
 		}, time);
 	}
+	initDreamValue();
+}
+
+function initDreamValue() {
+	localStorage.setItem("dreamValue", 0);
 }
 	
 
@@ -78,6 +82,24 @@ function visitHatter() {
 function visitRabbit() {
 	localStorage.setItem('rabbitVisited', true);
 	window.location.href = "alice_r1.html";
+}
+
+function leave() {
+	var dreamValue = parseInt(localStorage.getItem("dreamValue"));
+	if (dreamValue <= 0) {
+		window.location.href = "alice_outgood1.html";
+	} else {
+		window.location.href = "alice_outbad1.html";
+	}
+}
+
+function stay() {
+	var dreamValue = parseInt(localStorage.getItem("dreamValue"));
+	if (dreamValue >= 0) {
+		window.location.href = "alice_ingood.html";
+	} else {
+		window.location.href = "alice_inbad.html";
+	}
 }
 
 function resetGame() {
