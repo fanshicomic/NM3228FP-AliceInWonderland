@@ -1,10 +1,6 @@
 var animate;
 var animated = false;
 var dreamValue = 0;
-var queenVisited = false;
-var catVisited = false;
-var hatterVisited = false;
-var rabbitVisited = false;
 
 function animateCover() {
 	if (animated == false) {
@@ -36,7 +32,9 @@ function chooseOption(value, panel) {
 }
 
 function changeDreamValue(value) {
+	var dreamValue = parseInt(localStorage.getItem("dreamValue"));
 	dreamValue +=value;
+	localStorage.setItem("dreamValue", dreamValue);
 }
 
 function goToNextPanel(panel) {
@@ -44,26 +42,26 @@ function goToNextPanel(panel) {
 }
 
 function showDoors() {
-	if (!catVisited) {
+	if (localStorage.getItem("catVisited") != "true") {
 		$("#cat-image").attr("src", "images/doorEmpty.png");
 	} else {
 		$("#cat-image").attr("src", "images/doorCat.png");
 	}
-	if (!hatterVisited) {
+	if (localStorage.getItem("hatterVisited") != "true") {
 		$("#hatter-image").attr("src", "images/doorEmpty.png");
 	} else {
 		$("#hatter-image").attr("src", "images/doorMadHatter.png");
 	}
-	if (!rabbitVisited) {
+	if (localStorage.getItem("rabbitVisited") != "true") {
 		$("#rabbit-image").attr("src", "images/doorEmpty.png");
 	} else {
 		$("#rabbit-image").attr("src", "images/doorRabbit.png");
 	}
 }
 
-function visitRight() {
-	localStorage.setItem('rightVisited', true);
-	window.location.href = "alice_5.html";
+function visitCat() {
+	localStorage.setItem('catVisited', true);
+	window.location.href = "alice_c1.html";
 }
 
 function visitLeft() {
