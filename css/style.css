@@ -20,19 +20,10 @@ body {
 	cursor: hand;
 }
 
-.choose_response {
-	position: absolute;
-	top: 68%;
-	margin-top: 5%;
-	left: 21%;
-	font-size: 1.5em;
-}
-
 .response-1 {
 	cursor: hand;
-	position: absolute;
-	top: 73%;
-	margin-top: 5%;
+	position: relative;
+	margin-top: -9%;
 	width: 100%;
 	left: auto;
 	right: auto;
@@ -41,9 +32,8 @@ body {
 
 .response-2 {
 	cursor: hand;
-	position: absolute;
-	top: 78%;
-	margin-top: 5%;
+	position: relative;
+	margin-top: 2%;
 	width: 100%;
 	left: auto;
 	right: auto;
