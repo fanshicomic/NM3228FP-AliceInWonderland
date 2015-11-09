@@ -59,6 +59,12 @@ function showDoors() {
 	}
 }
 
+function visitQueen() {
+	if (localStorage.getItem("catVisited") == "true" && localStorage.getItem("hatterVisited") == "true" && localStorage.getItem("rabbitVisited") == "true") {
+		window.location.href = "alice_q1.html";
+	}
+}
+
 function visitCat() {
 	localStorage.setItem('catVisited', true);
 	window.location.href = "alice_c1.html";

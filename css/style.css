@@ -145,6 +145,22 @@
 	width: 10%;
 }
 
+#left {
+	position: absolute;
+	left: 15.5%;
+    width:34%;
+    height:84%;
+    top: 10%;
+}
+
+#right {
+	position: absolute;
+	right: 15.5%;
+	height:84%;
+	width:34%;
+	top: 10%;
+}
+
 #alice {
 	position: absolute;
 	right: 18%;
