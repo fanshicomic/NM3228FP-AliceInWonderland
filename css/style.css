@@ -27,12 +27,12 @@
 .response-1 {
 	cursor: hand;
 	position: absolute;
-	top: 71%;
+	top: 70%;
 	margin-top: 5%;
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .response-1:hover, .response-2:hover {
@@ -42,12 +42,12 @@
 .response-2 {
 	cursor: hand;
 	position: absolute;
-	top: 78%;
+	top: 79.5%;
 	margin-top: 5%;
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .door {
