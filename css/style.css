@@ -35,10 +35,6 @@
 	font-size: 18px;
 }
 
-.response-1:hover, .response-2:hover {
-	color: blue;
-}
-
 .response-2 {
 	cursor: hand;
 	position: absolute;
@@ -48,6 +44,51 @@
 	left: auto;
 	right: auto;
 	font-size: 18px;
+}
+
+.response-hatter-1 {
+	cursor: hand;
+	position: absolute;
+	top: 66%;
+	margin-top: 5%;
+	width: 100%;
+	left: auto;
+	right: auto;
+	font-size: 18px;
+}
+
+.response-hatter-2 {
+	cursor: hand;
+	position: absolute;
+	top: 78%;
+	margin-top: 5%;
+	width: 100%;
+	left: auto;
+	right: auto;
+	font-size: 18px;
+}
+
+.response-friends-1 {
+	cursor: hand;
+	position: absolute;
+	top: 58%;
+	margin-top: 5%;
+	right: 20%;
+	font-size: 18px;
+}
+
+.response-friends-2 {
+	cursor: hand;
+	position: absolute;
+	top: 73%;
+	margin-top: 5%;
+	right: 19%;
+	font-size: 18px;
+}
+
+.response-1:hover, .response-2:hover, .response-hatter-1:hover, .response-hatter-2:hover,
+.response-friends-1:hover, .response-friends-2:hover {
+	color: blue;
 }
 
 .door {

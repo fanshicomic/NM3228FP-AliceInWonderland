@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+	<title>Alice In Wonderland</title>
+</head>
+<body>
+	<div id="container" style="text-align:center">
+		<h1 class="title">- Alice In Wonderland -</h1>
+		<img id="background-img" src="images/hatter/m12.png" style="width:70%">
+		<div id="responses">
+			<p class="response-friends-1">"You are right Mr. Hatter,<br> there are so many things I wish<br> to talk to you about!"</p>
+			<p class="response-friends-2">"No, this is not real. You only exist<br> in my mind...I’m talking to myself.<br> I need to snap out of it now."</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(".response-friends-1").hover(
+	 	function() {
+		    $("#background-img").attr("src", "images/hatter/m12_stay.png");
+		}, function() {
+		    $("#background-img").attr("src", "images/hatter/m12.png");
+		}
+	);
+
+	$(".response-friends-2").hover(
+	 	function() {
+		    $("#background-img").attr("src", "images/hatter/m12_leave.png");
+		}, function() {
+		    $("#background-img").attr("src", "images/hatter/m12.png");
+		}
+	);
+
+	$(".response-friends-1").click(function() {
+		chooseOption(0, "m13_happy");
+	});
+
+	$(".response-friends-2").click(function() {
+		chooseOption(0, "m13_angry");
+	});
+</script>
+</html>

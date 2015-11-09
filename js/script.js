@@ -64,6 +64,16 @@ function visitCat() {
 	window.location.href = "alice_c1.html";
 }
 
+function visitHatter() {
+	localStorage.setItem('hatterVisited', true);
+	window.location.href = "alice_m1.html";
+}
+
+function visitRabbit() {
+	localStorage.setItem('rabbitVisited', true);
+	window.location.href = "alice_r1.html";
+}
+
 function resetGame() {
 	localStorage.setItem('catVisited', false);
 	localStorage.setItem('hatterVisited', false);
