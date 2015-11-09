@@ -68,6 +68,28 @@
 	font-size: 18px;
 }
 
+.response-rabbit-1 {
+	cursor: hand;
+	position: absolute;
+	top: 69%;
+	margin-top: 5%;
+	width: 100%;
+	left: auto;
+	right: auto;
+	font-size: 18px;
+}
+
+.response-rabbit-2 {
+	cursor: hand;
+	position: absolute;
+	top: 77.5%;
+	margin-top: 5%;
+	width: 100%;
+	left: auto;
+	right: auto;
+	font-size: 18px;
+}
+
 .response-friends-1 {
 	cursor: hand;
 	position: absolute;
@@ -87,7 +109,7 @@
 }
 
 .response-1:hover, .response-2:hover, .response-hatter-1:hover, .response-hatter-2:hover,
-.response-friends-1:hover, .response-friends-2:hover {
+.response-rabbit-1:hover, .response-rabbit-2:hover, .response-friends-1:hover, .response-friends-2:hover {
 	color: blue;
 }
 
