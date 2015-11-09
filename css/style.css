@@ -129,23 +129,23 @@ body {
 }
 
 #cat {
-	position: absolute;
+	position: relative;
 	left: 30%;
-	top: 48%;
+	margin-top: -27%;
 	width: 10%;
 }
 
 #hatter {
-	position: absolute;
+	position: relative;
 	left: 43%;
-	top: 48%;
+	margin-top: -17%;
 	width: 10%;
 }
 
 #rabbit {
-	position: absolute;
+	position: relative;
 	left: 57%;
-	top: 48%;
+	margin-top: -17%;
 	width: 10%;
 }
 
