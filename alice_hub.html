@@ -31,7 +31,39 @@
 
 <script type="text/javascript">
 	showDoors();
-
+	$("#cat-image").hover(
+	 	function() {
+	 		if (localStorage.getItem("catVisited") != "true") {
+			    $("#cat-img").attr("src", "images/doorCat.png");
+			}
+		}, function() {
+			if (localStorage.getItem("catVisited") != "true") {
+		    	$("#cat-img").attr("src", "images/doorEmpty.png");
+		    }
+		}
+	);
+	$("#hatter-image").hover(
+	 	function() {
+	 		if (localStorage.getItem("hatterVisited") != "true") {
+			    $("#hatter-img").attr("src", "images/doorHatter.png");
+			}
+		}, function() {
+			if (localStorage.getItem("hatterVisited") != "true") {
+		    	$("#hatter-img").attr("src", "images/doorEmpty.png");
+		    }
+		}
+	);
+	$("#rabbit-image").hover(
+	 	function() {
+	 		if (localStorage.getItem("rabbitVisited") != "true") {
+			    $("#rabbit-img").attr("src", "images/doorRabbit.png");
+			}
+		}, function() {
+			if (localStorage.getItem("rabbitVisited") != "true") {
+		    	$("#rabbit-img").attr("src", "images/doorEmpty.png");
+		    }
+		}
+	);
 	$("#queen-image").click(function() {
 		visitQueen();
 	});

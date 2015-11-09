@@ -13,6 +13,7 @@ function animateCover() {
 		}, time);
 	}
 	initDreamValue();
+	resetGame();
 }
 
 function initDreamValue() {

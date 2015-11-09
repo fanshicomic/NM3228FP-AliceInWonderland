@@ -25,29 +25,29 @@ body {
 	top: 68%;
 	margin-top: 5%;
 	left: 21%;
-	font-size: 23px;
+	font-size: 1.5em;
 }
 
 .response-1 {
 	cursor: hand;
 	position: absolute;
-	top: 70%;
+	top: 73%;
 	margin-top: 5%;
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 18px;
+	font-size: 1.1em;
 }
 
 .response-2 {
 	cursor: hand;
 	position: absolute;
-	top: 79.5%;
+	top: 78%;
 	margin-top: 5%;
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 18px;
+	font-size: 1.1em;
 }
 
 .response-hatter-1 {
