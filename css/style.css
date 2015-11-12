@@ -184,6 +184,10 @@ body {
 	top: 15%;
 }
 
+#container {
+	margin-top: 4%;
+}
+
 #long-container {
 	background-image: url("../images/pre-hub/4.png");
 	background-position: left;
