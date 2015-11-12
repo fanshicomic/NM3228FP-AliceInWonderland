@@ -7,12 +7,16 @@
     <meta name="author" content="">
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/snowfall.jquery.js"></script>
     <link rel="stylesheet" href="css/style.css">
 	<title>Alice In Wonderland</title>
 </head>
 <body>
 	<div id="container" style="text-align:center">
-		<img src="images/hub.png" style="width:70%">
+		<img id="hub" src="images/hub.png">
+		<div id="snow-wrapper">
+			
+		</div>
 		<div id="queen">
 			<img class="door" src="images/doorEmpty.png" id="queen-image" style="width:160%;">
 		</div>
@@ -29,51 +33,57 @@
 </body>
 
 <script type="text/javascript">
-	showDoors();
-	$("#cat-image").hover(
-	 	function() {
-	 		if (localStorage.getItem("catVisited") != "true") {
-			    $("#cat-img").attr("src", "images/doorCat.png");
+	$(document).ready(function(){
+			
+		$("#snow-wrapper").snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:5,  flakeCount : 250});
+
+		$("#cat-image").hover(
+		 	function() {
+		 		if (localStorage.getItem("catVisited") != "true") {
+				    $("#cat-img").attr("src", "images/doorCat.png");
+				}
+			}, function() {
+				if (localStorage.getItem("catVisited") != "true") {
+			    	$("#cat-img").attr("src", "images/doorEmpty.png");
+			    }
 			}
-		}, function() {
-			if (localStorage.getItem("catVisited") != "true") {
-		    	$("#cat-img").attr("src", "images/doorEmpty.png");
-		    }
-		}
-	);
-	$("#hatter-image").hover(
-	 	function() {
-	 		if (localStorage.getItem("hatterVisited") != "true") {
-			    $("#hatter-img").attr("src", "images/doorHatter.png");
+		);
+		$("#hatter-image").hover(
+		 	function() {
+		 		if (localStorage.getItem("hatterVisited") != "true") {
+				    $("#hatter-img").attr("src", "images/doorHatter.png");
+				}
+			}, function() {
+				if (localStorage.getItem("hatterVisited") != "true") {
+			    	$("#hatter-img").attr("src", "images/doorEmpty.png");
+			    }
 			}
-		}, function() {
-			if (localStorage.getItem("hatterVisited") != "true") {
-		    	$("#hatter-img").attr("src", "images/doorEmpty.png");
-		    }
-		}
-	);
-	$("#rabbit-image").hover(
-	 	function() {
-	 		if (localStorage.getItem("rabbitVisited") != "true") {
-			    $("#rabbit-img").attr("src", "images/doorRabbit.png");
+		);
+		$("#rabbit-image").hover(
+		 	function() {
+		 		if (localStorage.getItem("rabbitVisited") != "true") {
+				    $("#rabbit-img").attr("src", "images/doorRabbit.png");
+				}
+			}, function() {
+				if (localStorage.getItem("rabbitVisited") != "true") {
+			    	$("#rabbit-img").attr("src", "images/doorEmpty.png");
+			    }
 			}
-		}, function() {
-			if (localStorage.getItem("rabbitVisited") != "true") {
-		    	$("#rabbit-img").attr("src", "images/doorEmpty.png");
-		    }
-		}
-	);
-	$("#queen-image").click(function() {
-		visitQueen();
+		);
+		$("#queen-image").click(function() {
+			visitQueen();
+		});
+		$("#cat-image").click(function() {
+			visitCat();
+		});
+		$("#hatter-image").click(function() {
+			visitHatter();
+		});
+		$("#rabbit-image").click(function() {
+			visitRabbit();
+		});
+
 	});
-	$("#cat-image").click(function() {
-		visitCat();
-	});
-	$("#hatter-image").click(function() {
-		visitHatter();
-	});
-	$("#rabbit-image").click(function() {
-		visitRabbit();
-	});
+		showDoors();
 </script>
 </html>
