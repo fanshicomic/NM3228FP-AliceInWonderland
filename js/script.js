@@ -4,10 +4,10 @@ var animated = false;
 function animateCover() {
 	if (animated == false) {
 		animated = true;
-		var round = 22;
+		var round = 20;
 		var total = round;
-		var speed = 10;
-		var time = 50;
+		var speed = 20;
+		var time = 40;
 		animate = setInterval(function(){
 			moveAlice(speed, total, round--);
 		}, time);
@@ -23,7 +23,7 @@ function initDreamValue() {
 
 function moveAlice(speed, total, round) {
 	var top = parseInt($("#alice").css("top"));
-	$("#alice").css("top", top + speed + (total - round) / 3);
+	$("#alice").css("top", top + speed + total - round);
 	if (round < 0) {
 		clearInterval(animate);
 		window.location.href = "alice_2.html";
