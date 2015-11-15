@@ -199,8 +199,8 @@ body {
 }
 
 #long-container {
-	background-image: url("../images/pre-hub/4.png");
-	background-position: left;
+	background-image: url("../images/pre-hub/13.png");
+	background-position: right;
 	background-size: 200% 100%;
 	width: 70%;
 	margin-left: 15%;
@@ -209,7 +209,7 @@ body {
 
 #long-container-17 {
 	background-image: url("../images/pre-hub/17.png");
-	background-position: left;
+	background-position: 100% 0%;
 	background-size: 200% 100%;
 	width: 70%;
 	margin-left: 15%;

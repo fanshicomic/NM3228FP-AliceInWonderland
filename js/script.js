@@ -30,6 +30,21 @@ function moveAlice(speed, total, round) {
 	}
 }
 
+function animateBackground() {
+	var round = 100;
+	var time = 80;
+	animate = setInterval(function(){
+		moveBackground(round--);
+	}, time);
+}
+
+function moveBackground(round) {
+	$("#long-container").css("background-position", round + "% 0%");
+	if (round <= 0) {
+		clearInterval(animate);
+	}
+}
+
 function chooseOption(value, panel) {
 	changeDreamValue(value);
 	goToNextPanel(panel);
