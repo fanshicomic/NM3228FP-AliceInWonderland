@@ -14,33 +14,18 @@
 	<div id="container" style="text-align:center">
 		<img id="background-img" src="images/hatter/m12.png" style="width:70%">
 		<div id="responses">
-			<p class="response-friends-1">"You are right Mr. Hatter,<br> there are so many things I wish<br> to talk to you about!"</p>
-			<p class="response-friends-2">"No, this is not real. You only exist<br> in my mind...I’m talking to myself.<br> I need to snap out of it now."</p>
+			<p class="response-hatter-1">"You are right Mr. Hatter, there are so many <br>things I wish to talk to you about!"</p>
+			<p class="response-hatter-2">"No, you are not real. You only exist in my mind.<br> If I go on I would be talking to myself and turn insane!"</p>
 		</div>
 	</div>
 </body>
 <script type="text/javascript">
-	$(".response-friends-1").hover(
-	 	function() {
-		    $("#background-img").attr("src", "images/hatter/m12_stay.png");
-		}, function() {
-		    $("#background-img").attr("src", "images/hatter/m12.png");
-		}
-	);
 
-	$(".response-friends-2").hover(
-	 	function() {
-		    $("#background-img").attr("src", "images/hatter/m12_leave.png");
-		}, function() {
-		    $("#background-img").attr("src", "images/hatter/m12.png");
-		}
-	);
-
-	$(".response-friends-1").click(function() {
+	$(".response-hatter-1").click(function() {
 		chooseOption(250, "m13_happy");
 	});
 
-	$(".response-friends-2").click(function() {
+	$(".response-hatter-2").click(function() {
 		chooseOption(-250, "m13_angry");
 	});
 </script>
