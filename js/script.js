@@ -63,6 +63,16 @@ function showDoors() {
 	}
 }
 
+function showQueenDoor() {
+	var src = "images/doorQueen.png";
+	$("#queen-image").attr("src",src);
+}
+
+function hideQueenDoor() {
+	var src = "images/doorEmpty.png";
+	$("#queen-image").attr("src",src);
+}
+
 function showCatDoor() {
 	var src = "images/doorCat.png";
 	$("#cat-image").attr("src",src);

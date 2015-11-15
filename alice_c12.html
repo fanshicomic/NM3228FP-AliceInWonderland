@@ -12,7 +12,19 @@
 </head>
 <body>
 	<div id="container" style="text-align:center">
-		<a href="alice_c13.html"><img src="images/cat/c12.png" style="width:70%"></a>
+		<img src="images/cat/c12.png" style="width:70%">
+		<div id="responses">
+			<p class="response-1">"I know. I don’t want to share her fate."</p>
+			<p class="response-2">"It is not as bad as you make it sound."</p>
+		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	$(".response-1").click(function() {
+		chooseOption(100, "c13");
+	});
+	$(".response-2").click(function() {
+		chooseOption(-100, "c13");
+	});
+</script>
 </html>
