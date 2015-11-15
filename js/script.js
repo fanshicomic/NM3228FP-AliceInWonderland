@@ -47,20 +47,50 @@ function goToNextPanel(panel) {
 
 function showDoors() {
 	if (localStorage.getItem("catVisited") != "true") {
-		$("#cat-image").attr("src", "images/doorEmpty.png");
+		hideCatDoor();
 	} else {
-		$("#cat-image").attr("src", "images/doorCat.png");
+		showCatDoor();
 	}
 	if (localStorage.getItem("hatterVisited") != "true") {
-		$("#hatter-image").attr("src", "images/doorEmpty.png");
+		hideHatterDoor();
 	} else {
-		$("#hatter-image").attr("src", "images/doorMadHatter.png");
+		showHatterDoor();
 	}
 	if (localStorage.getItem("rabbitVisited") != "true") {
-		$("#rabbit-image").attr("src", "images/doorEmpty.png");
+		hideRabbitDoor();
 	} else {
-		$("#rabbit-image").attr("src", "images/doorRabbit.png");
+		showRabbitDoor();
 	}
+}
+
+function showCatDoor() {
+	var src = "images/doorCat.png";
+	$("#cat-image").attr("src",src);
+}
+
+function hideCatDoor() {
+	var src = "images/doorEmpty.png";
+	$("#cat-image").attr("src",src);
+}
+
+function showHatterDoor() {
+	var src = "images/doorMadHatter.png";
+	$("#hatter-image").attr("src",src);
+}
+
+function hideHatterDoor() {
+	var src = "images/doorEmpty.png";
+	$("#hatter-image").attr("src",src);
+}
+
+function showRabbitDoor() {
+	var src = "images/doorRabbit.png";
+	$("#rabbit-image").attr("src",src);
+}
+
+function hideRabbitDoor() {
+	var src = "images/doorEmpty.png";
+	$("#rabbit-image").attr("src",src);
 }
 
 function visitQueen() {
