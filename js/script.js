@@ -76,6 +76,11 @@ function showDoors() {
 	} else {
 		showRabbitDoor();
 	}
+	if (localStorage.getItem("catVisited") == "true" && localStorage.getItem("hatterVisited") == "true" && localStorage.getItem("rabbitVisited") == "true") {
+		showQueenDoor();
+	} else {
+		hideQueenDoor();
+	}
 }
 
 function showQueenDoor() {

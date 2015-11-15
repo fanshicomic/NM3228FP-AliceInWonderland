@@ -61,7 +61,7 @@ body {
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 0.8em;
+	font-size: 0.5em;
 }
 
 .response-cat-2 {
@@ -71,7 +71,7 @@ body {
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 0.8em;
+	font-size: 0.5em;
 }
 
 .response-hatter-1 {
@@ -87,7 +87,7 @@ body {
 .response-hatter-2 {
 	cursor: hand;
 	position: relative;
-	margin-top: 3.2%;
+	margin-top: 2.4%;
 	width: 100%;
 	left: auto;
 	right: auto;
@@ -151,16 +151,16 @@ body {
 }
 
 #queen {
-	position: absolute;
+	position: relative;
 	left: 45%;
-	top: 11.9%;
+	margin-top: -45%;
 	width: 10%;
 }
 
 #cat {
 	position: relative;
 	left: 32.4%;
-	margin-top: -25.5%;
+	margin-top: 1.5%;
 	width: 10%;
 }
 
@@ -174,7 +174,7 @@ body {
 #rabbit {
 	position: relative;
 	left: 59.5%;
-	margin-top: -15%;
+	margin-top: -14.7%;
 	width: 10%;
 }
 
@@ -213,7 +213,7 @@ body {
 	background-size: 200% 100%;
 	width: 70%;
 	margin-left: 15%;
-	height: 88%;
+	height: 78%;
 }
 
 #long-container-17 {

@@ -35,19 +35,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 			
-		$("#snow-wrapper").snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:5,  flakeCount : 250});
-		$("#queen-image").hover(
-		 	function() {
-		 		var catVisited = localStorage.getItem("catVisited") == "true";
-		 		var hatterVisited = localStorage.getItem("hatterVisited") == "true";
-		 		var rabbitVisited = localStorage.getItem("rabbitVisited") == "true";
-		 		if (catVisited && hatterVisited && rabbitVisited) {
-				    showQueenDoor();
-				}
-			}, function() {
-			    hideQueenDoor();
-			}
-		);
+		//$("#snow-wrapper").snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:5,  flakeCount : 250});
 
 		$("#cat-image").hover(
 		 	function() {
@@ -96,6 +84,6 @@
 		});
 
 	});
-		showDoors();
+	showDoors();
 </script>
 </html>
