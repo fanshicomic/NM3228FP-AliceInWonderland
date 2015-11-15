@@ -11,8 +11,33 @@
 	<title>Alice In Wonderland</title>
 </head>
 <body>
+	<audio id="bgm-controller"controls autoplay loop style="width:1px; height:1px;">
+		<source id="bgm" src="sound/entrance.mp3" type="audio/mpeg">
+		Your browser does not support the audio tag.
+	</audio>
+	</embed>
 	<iframe id ="story-frame" src="alice_1.html">
 		<p>Your browser does not support iframes.</p>
 	</iframe>
 </body>
+<script type="text/javascript">
+	setInterval(function(){
+			if (localStorage.getItem("newPlace") == "true") {
+				localStorage.setItem("newPlace", false);
+				if (localStorage.getItem("currPlace") == "Cat") {
+					$("#bgm").attr("src", "sound/Cat.mp3");
+				} else if (localStorage.getItem("currPlace") == "Hatter") {
+					$("#bgm").attr("src", "sound/Hatter.mp3");
+				} else if (localStorage.getItem("currPlace") == "Rabbit") {
+					$("#bgm").attr("src", "sound/Rabbit.mp3");
+				} else {
+					$("#bgm").attr("src", "sound/Queen.mp3");
+				}
+				$("#bgm-controller").trigger("pause");
+				$("#bgm-controller").trigger("load");
+				//$("#bgm-controller").prop("currentTime", 0);
+				$("#bgm-controller").trigger("play");
+			}
+		}, 50);
+</script>
 </html>

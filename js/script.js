@@ -120,22 +120,30 @@ function hideRabbitDoor() {
 
 function visitQueen() {
 	if (localStorage.getItem("catVisited") == "true" && localStorage.getItem("hatterVisited") == "true" && localStorage.getItem("rabbitVisited") == "true") {
+		localStorage.setItem('newPlace', true);
+		localStorage.setItem('currPlace', "Queen");
 		window.location.href = "alice_q1.html";
 	}
 }
 
 function visitCat() {
 	localStorage.setItem('catVisited', true);
+	localStorage.setItem('newPlace', true);
+	localStorage.setItem('currPlace', "Cat");
 	window.location.href = "alice_c1.html";
 }
 
 function visitHatter() {
 	localStorage.setItem('hatterVisited', true);
+	localStorage.setItem('newPlace', true);
+	localStorage.setItem('currPlace', "Hatter");
 	window.location.href = "alice_m1.html";
 }
 
 function visitRabbit() {
 	localStorage.setItem('rabbitVisited', true);
+	localStorage.setItem('newPlace', true);
+	localStorage.setItem('currPlace', "Rabbit");
 	window.location.href = "alice_r1.html";
 }
 
@@ -161,4 +169,6 @@ function resetGame() {
 	localStorage.setItem('catVisited', false);
 	localStorage.setItem('hatterVisited', false);
 	localStorage.setItem('rabbitVisited', false);
+	localStorage.setItem('newPlace', false);
+	localStorage.setItem('currPlace', "pre-hub");
 }
