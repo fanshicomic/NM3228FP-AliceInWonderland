@@ -7,6 +7,11 @@ body {
   src: url('../font/DiamondDust.ttf');
 }
 
+@font-face {
+	font-family: 'Yearsupplyoffairycakes';
+	src: url('../font/Yearsupplyoffairycakes.ttf');
+}
+
 .title {
   font-family: 'DiamondDust';
   color: brown;
@@ -27,7 +32,7 @@ body {
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 1.1em;
+	font-size: 0.8em;
 }
 
 .response-2 {
@@ -37,7 +42,7 @@ body {
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 1.1em;
+	font-size: 0.8em;
 }
 
 .response-cat-1 {
@@ -47,7 +52,7 @@ body {
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 1.1em;
+	font-size: 0.8em;
 }
 
 .response-cat-2 {
@@ -57,7 +62,7 @@ body {
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 1.1em;
+	font-size: 0.8em;
 }
 
 .response-hatter-1 {
@@ -67,7 +72,7 @@ body {
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 1.1em;
+	font-size: 0.8em;
 }
 
 .response-hatter-2 {
@@ -77,29 +82,27 @@ body {
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 1.1em;
+	font-size: 0.8em;
 }
 
 .response-rabbit-1 {
 	cursor: hand;
-	position: absolute;
-	top: 69%;
-	margin-top: 5%;
+	position: relative;
+	margin-top: -9.5%;
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 18px;
+	font-size: 0.8em;
 }
 
 .response-rabbit-2 {
 	cursor: hand;
-	position: absolute;
-	top: 77.5%;
-	margin-top: 5%;
+	position: relative;
+	margin-top: 3.4%;
 	width: 100%;
 	left: auto;
 	right: auto;
-	font-size: 18px;
+	font-size: 0.8em;
 }
 
 .response-friends-1 {
@@ -123,7 +126,7 @@ body {
 .response-1:hover, .response-2:hover, .response-hatter-1:hover, .response-hatter-2:hover,
 .response-rabbit-1:hover, .response-rabbit-2:hover, .response-friends-1:hover, .response-friends-2:hover,
 .response-cat-1:hover, .response-cat-2:hover {
-	color: blue;
+	color: red;
 }
 
 .door {
@@ -140,8 +143,8 @@ body {
 
 #queen {
 	position: absolute;
-	left: 44.5%;
-	top: 14%;
+	left: 45%;
+	top: 11.9%;
 	width: 10%;
 }
 
@@ -192,6 +195,7 @@ body {
 
 #container {
 	margin-top: 4%;
+	font-family: 'Yearsupplyoffairycakes';
 }
 
 #long-container {

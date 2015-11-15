@@ -12,7 +12,19 @@
 </head>
 <body>
 	<div id="container" style="text-align:center">
-		<a href="alice_hub.html"><img src="images/rabbit/r9.png" style="width:70%"></a>
+		<img src="images/rabbit/r9.png" style="width:70%">
+		<div id="responses">
+			<p class="response-rabbit-1" style="margin-top:-12%;">"You are wrong. I have the power to choose a happier life."</p>
+			<p class="response-rabbit-2">"You are right. Looks like I’ll just have to learn to handle it."</p>
+		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	$(".response-rabbit-1").click(function() {
+		chooseOption(200, "r10");
+	});
+	$(".response-rabbit-2").click(function() {
+		chooseOption(-200, "r10");
+	});
+</script>
 </html>
